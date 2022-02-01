@@ -1,0 +1,105 @@
+.body{
+    background-image: url("world.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+#container{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+}
+.h1-tag{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: brown;
+    margin: 0;
+    border-bottom: 3px double gray;
+    display: block;
+}
+#first{
+
+    background-color: black;
+    color: white;
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+#first>h1{
+    text-align: center;
+}
+#first>h2{
+    font-size: 1em;
+    text-decoration: underline;
+}
+#first>h3{
+    color: brown;
+    text-decoration: underline;
+}
+.second{
+    overflow: scroll;
+    font-size: 2em;
+    color: brown;
+    height: 100vh;
+
+    /*background: brown;*/
+}
+.second>img{
+    width: 100%;
+}
+/*image design*/
+.image{
+    width: 50%;
+}
+#slide{
+    line-height: 4em;
+    padding-right: 20px;
+    background-color: gray;
+    position: fixed;
+    left: -70px;
+    top: 45vh;
+    color: white;
+    z-index: 10;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+@media screen and (min-width: 100px) and (max-width: 425px) {
+    #container{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #first{
+
+        background-color: black;
+        color: white;
+        height: 100vh;
+        overflow: scroll;
+
+    }
+    .second{
+        background-color: brown;
+        color: black;
+    }
+    .h1-tag{
+        font-family: Serif;
+        color: white;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        border-bottom: 3px double brown;
+        display: block;
+    }
+
+}
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    .h1-tag{
+        background-color: brown;
+        color: black;
+        font-family: SansSerif;
+        font-style: italic;
+    }
+}
+
